@@ -4,7 +4,7 @@ from pathlib import Path
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-current_dir = Path(__file__).parent
+current_dir = Path(os.getcwd())
 watch_folder = current_dir
 base_folder = current_dir
 
